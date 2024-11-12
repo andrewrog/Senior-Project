@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link type="icon" rel="image/png" href="images/favicon.png" />
+    
+    <!-- Font: Poppins | Imported from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/about.css">
+    <style></style>
+  </head>
+  <body>
+    <!-- Using paragraphs for easy font styling -->
+    <nav> <!-- This is the nav bar content -->
+      <div class="left-side">
+        <a class="home-styling" href="about.html">About</a>
+      </div>
+      <div class="right-area">
+         <!-- When window size <= 700px then hamburger menu appears --> 
+         <button class="hamburger-button" onclick="activateMenu()">
+          <img class="hamburger-icon" src="icons/hamburger.svg">
+        </button>
+        <div class="right-side">
+          <div class="link-container">
+            <a class="main-link" href="index.html">Home</a>
+          </div>
+          <div class="link-container">
+            <a class="current-link" href="about.html">About</a>
+          </div>
+          <div class="link-container">
+            <a class="main-link" href="problems.html">Problem Sets</a>
+          </div>
+          <div class="resource-link-container" style="position: relative;">
+            <a class="main-link" href="resources.html">Resources <span class="arrow">&#9650;</span></a>
+            <div class="drop-down-menu">
+              <div class="drop-down-item-calc">
+                <a class="main-link" href="financial-calculator.html">Financial Calculator</a>
+              </div>
+              <div class="drop-down-item-down">
+                <a class="main-link" href="downloads.html">Downloads</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-1">
+      <p class="page-title">
+        About The Site
+      </p>
+      <div class="main-about-text">
+        <img class="about-image-right" src="images/about.jpeg">
+        
+        <p class="about-section">
+          We are dedicated to providing high quality informational accounting and financial content to entrepreneurship and
+          business students. On this site you can find <a href="index.html" class="body-links">videos</a> on subject matters ranging from accounting foundations, to tax logic and
+          proceedings, to budgeting. You can also find peruse and engage in <a href="problems.html" class="body-links">problem sets</a> which we created specifically to help you garner
+          a complete and useful understanding of all topics. 
+        </p>
+        
+        <p class="about-section">
+          Under the resources tab you can find an intuitive <a href="financial-calculator" class="body-links">financial calculator</a>. <a class="body-links" href="downloads">Downloadable resources</a> are also available if you want content saved on your personal device rather than relying on the internet.
+          And <a class="body-links" href="sources.html">material</a> from other sites that we pulled information from to build this site.
+        </p>
+        
+        <p class="page-title">
+          The Driving Force
+        </p>
+
+        <p class="about-section">
+          Foundational knowledge of accounting and finance for someone looking to start a business, work in the business world, or just have a better grasp on which companies to invest in is imperative. While
+          there are a lot of sites out there that provide learning resources for people looking to learn more about accounting and finance, a lot of the sites are not free and annoying to navigate with onslaughts of
+          advertisements. Everything on this site has been well planned out, and created with the highest educational value in mind.
+        </p>
+
+        <p class="about-section">
+          Anyone can use this site to learn more whether you are just starting to get into accounting, want to learn more, or already have some prior knowledge. Not only are the foundations explored but also softwares and techniques
+           that can make it easier to grasp and visualize data.
+        </p>
+      </div>
+
+      <div class="bottom-section">
+        <p class="page-title">
+          People
+        </p>
+
+        <div class="profile-flex">
+          <div class="picture-name-container">
+            <div class="profile-picture-container">
+              <img class="profile-picture" src="images/profile.jpeg">
+            </div>
+            <div>
+              Andrew Rogers
+            </div>
+          </div>
+          <div class="profile-description">
+            <p>I am a business student at Western Colorado University with an emphasis in Entrepreneurship. Head on over to
+              <a class="body-links" href="https://screeskierherald.com" target="_blank">Scree Skier Herald</a> if you enjoy
+            watching someone suffer through a variety of projects.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="whole-footer">
+        <div class="footer-sections">
+          <div class="footer-headings">
+            Contact
+          </div>
+          <div class="icon-container">
+            <a href="mailto:andrew.rog657@gmail.com">
+              <img src="icons/email-icon.svg" class="icons">
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-sections">
+          <div class="footer-sections">
+            <div class="footer-headings">
+              Site Map
+            </div>
+            <div class="icon-container">
+              <a href="somewhere">
+                <img src="icons/map.svg" class="icons">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-sections">
+          <div class="footer-sections">
+            <div class="footer-headings">
+              Partners
+            </div>
+            <div class="partners-container">
+              <div class="icon-container">
+                <a href="https://screeskierherald.com" target="_blank">
+                  <img src="icons/skier.png" class="partner" style="border-radius: 25px; object-fit: cover;">
+                </a>
+              </div>
+              <div class="icon-container">
+                <a href="https://western.edu/school/school-of-business/" target="_blank">
+                  <img src="icons/Western_State_Colorado_University_logo.svg.png" class="partner" style="object-fit: scale-down;">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="logo-container">
+          <a href="index.html">
+            <img class="the-financial-ascent" src="images/the-financial-ascent.png">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="JS Code/hamburger-menu.js"></script>
+  </body>
+</html>
