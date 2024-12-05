@@ -107,6 +107,10 @@ nav .hamburger-button.active {
     width: 100%;
     font-size: 15px;
   }
+
+  nav .home-styling {
+    font-size: 22px;
+  }
 }
 
 nav .main-link {
@@ -218,7 +222,7 @@ nav .main-link:hover,
 
 .profile-flex {
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
 .picture-name-container {
