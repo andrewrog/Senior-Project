@@ -5,10 +5,8 @@ function clearResults() {
   resultsDiv.innerHTML = '';
 }
 
-function copyResult() {
+function copyResult(input) {
   // Getting the id of the span element
-  const input = (document.getElementById('copy-content')).toString;
-
   navigator.clipboard.writeText(input.value);
 }
 
