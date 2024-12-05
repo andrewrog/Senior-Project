@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: Poppins , Arial; /* Arial is the backup font */
-  font-size: 18px;
-} 
+}
 
 p {
   margin: 0;
@@ -27,13 +26,15 @@ nav {
 
 nav .left-side {
   flex: 1;
+  display: flex;
+  align-items: center;
 }
 
 nav .home-styling {
   font-size: 28px;
-  font-weight: bold;
   text-decoration: none;
   color: black;
+  font-weight: 700;
 }
 
 nav .right-side {
@@ -59,6 +60,10 @@ nav .hamburger-button.active {
 }
 
 @media (max-width: 1100px) {
+  nav .home-styling {
+    font-size: 22px;
+  }
+  
   nav .right-side {
     display: none;
     flex-direction: column;
@@ -108,10 +113,6 @@ nav .hamburger-button.active {
     width: 100%;
     font-size: 15px;
   }
-
-  nav .home-styling {
-    font-size: 22px;
-  }
 }
 
 nav .main-link {
@@ -122,7 +123,7 @@ nav .main-link {
 }
 
 nav .drop-down-menu {
-  background-color:rgba(230, 230, 230, .9);
+  background-color:rgb(230, 230, 230);
   position: absolute;
   padding: 5px 5px;
   top: 100%;
@@ -134,6 +135,7 @@ nav .drop-down-menu {
   display: none;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  flex-shrink: 0;
 }
 
 nav .resource-link-container:hover .drop-down-menu {
@@ -165,97 +167,72 @@ nav .main-link:hover,
   color: rgb(100, 100, 100);
 }
 
-.section-1 {
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 270px;
+section {
   padding-top: 75px;
+  padding-bottom: 270px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-title {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
-.subtopic-title {
-  font-size: 22px;
+.page-section {
+  background-color: rgb(230, 230, 230);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.subtitle {
+  font-size: 20px;
   font-weight: 500;
-  margin-top: 10px;
 }
 
-.main-about-text {
-  font-size: 18px;
+.templates-grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 20px;
+  row-gap: 30px;
 }
 
-.body-links {
-  color:rgb(160, 30, 30);
-  text-decoration: none;
+.download-preview {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.body-links:hover {
-  color:rgb(100, 100, 100);
-}
-
-.body-links:active {
-  color: rgb(200, 200, 200);
-}
-
-.about-section {
+.image-container {
+  height: 200px;
+  width: 200px;
   margin-bottom: 10px;
 }
 
-.about-image-right {
-  width: 20%;
-  min-width: 250px;
-  height: auto;
-  object-fit: cover;
-  float: right;
-  margin-left: 20px;
-  margin-top: 3px;
-  border-color: rgb(160, 30, 30);
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.profile-flex {
-  display: flex;
-  justify-content: left;
-}
-
-.picture-name-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-weight: 600;
-  border: 3px solid rgb(160, 30, 30);
-  padding: 5px;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.profile-picture-container {
-  height: 150px;
-  width: 150px;
-}
-
-.profile-picture {
+.preview-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
-  border-radius: 75px;
+  border-radius: 5px;
 }
 
-.profile-description {
-  padding: 10px;
-  border: 3px solid rgb(160, 30, 30);
-  margin-left: -3px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.download-button {
+  background-color: rgb(160, 30, 30);
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.download-button:hover {
+  background-color: rgba(160, 30, 30, .7);
 }
 
 footer {
@@ -312,7 +289,7 @@ footer {
   font-size: 22px;
   font-weight: 700;
   color: white;
-  background-color: rgba(0 ,0, 0, .4);
+  background-color:rgba(0, 0, 0, .4);
   padding-left: 2.5px;
   padding-right: 2.5px;
   border-radius: 5px;
@@ -326,14 +303,14 @@ footer {
   text-decoration: none;
   color: white;
   font-size: 12px;
-  background-color: rgba(0 ,0, 0, .4);
+  background-color:rgba(0, 0, 0, .4);
   padding: 2.5px;
   border-radius: 5px;
   transition: background-color .3s;
 }
 
 .footer-links:hover {
-  background-color: rgba(0 ,0, 0, .8);
+  background-color:rgba(0, 0, 0, .8);
 }
 
 .icon-container {

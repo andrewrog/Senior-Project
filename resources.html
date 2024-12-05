@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Entrepreneurial Ascent</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    
+    <!-- Font: Poppins | Imported from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/resources.css">
+    <style></style>
+  </head>
+  <body>
+    <!-- Using paragraphs for easy font styling -->
+    <nav> <!-- This is the nav bar content -->
+      <div class="left-side">
+        <a class="home-styling" href="resources.html">Resources</a>
+      </div>
+      <div class="right-area">
+         <!-- When window size <= 700px then hamburger menu appears --> 
+         <button class="hamburger-button" onclick="activateMenu()">
+          <img class="hamburger-icon" src="icons/hamburger.svg">
+        </button>
+        <div class="right-side">
+          <div class="link-container">
+            <a class="main-link" href="index.html">Home</a>
+          </div>
+          <div class="link-container">
+            <a class="main-link" href="videos.html">Videos</a>
+          </div>
+          <div class="link-container">
+            <a class="main-link" href="problems.html">Problem Sets</a>
+          </div>
+          <div class="resource-link-container" style="position: relative;">
+            <a class="current-link" href="resources.html">Resources <span class="arrow">&#9650;</span></a>
+            <div class="drop-down-menu">
+              <div class="drop-down-item-calc">
+                <a class="main-link" href="financial-calculator.html">Financial Calculator</a>
+              </div>
+              <div class="drop-down-item-down">
+                <a class="main-link" style="font-size: 15px;" href="downloads.html">Downloads</a>
+              </div>
+              <div class="drop-down-item-down">
+                <a class="main-link" style="font-size: 15px;" href="sources.html">Sources</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <section>
+      <!-- Just three links to redirect people -->
+      <!-- Wrapping each button in a link -->
+      
+      <a href="financial-calculator.html" class="link-decoration">
+        <button class="redirect-link">
+          Financial Calculator
+        </button>
+      </a>  
+        
+      <a href="downloads.html" class="link-decoration">
+        <button class="redirect-link">
+          Downloads
+        </button>
+      </a>
+      
+      <a href="sources.html" class="link-decoration">
+        <button class="redirect-link">
+          Sources
+        </button>
+      </a>
+    
+    </section>
+
+    <footer>
+      <div class="whole-footer">
+        <div>
+          <div class="footer-headings">
+            Contact
+          </div>
+          <div class="icon-container">
+            <a href="mailto:andrew.rog657@gmail.com">
+              <img src="icons/email-icon.svg" class="icons">
+            </a>
+          </div>
+          <div class="directory-links">
+            <a href="https://www.google.com/maps/place/Western+Colorado+University/@38.5449984,-106.9252608,6972m/data=!3m1!1e3!4m6!3m5!1s0x873f92d177da1501:0x9aa5fc1ddb4a49ee!8m2!3d38.547862!4d-106.9179434!16zL20vMDc5cnR6?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" class="footer-links">
+              1 Western Way
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-sections">
+          <div class="directory-flex">
+            <div class="footer-headings">
+              Directory
+            </div>
+            <div class="directory-links">
+              <a href="index.html" class="footer-links">
+                Home
+              </a>
+            </div>
+            <div class="directory-links">
+              <a href="about.html" class="footer-links">
+                About
+              </a>
+            </div>
+            <div class="directory-links">
+              <a href="problems.html" class="footer-links">
+                Problem Sets
+              </a>
+            </div>
+            <div class="directory-links">
+              <a href="resources.html" class="footer-links">
+                Resources
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-sections">
+          <div>
+            <div class="footer-headings">
+              Partners
+            </div>
+            <div class="partners-container">
+              <div class="icon-container">
+                <a href="https://screeskierherald.com" target="_blank">
+                  <img src="icons/skier.png" class="partner" style="border-radius: 25px; object-fit: cover;">
+                </a>
+              </div>
+              <div class="icon-container">
+                <a href="https://western.edu/program/innovation-entrepreneurship-ie/" target="_blank">
+                  <img src="icons/Western_State_Colorado_University_logo.svg.png" class="partner" style="object-fit: scale-down;">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-footer">
+        <div class="logo-container">
+          <a href="index.html">
+            <img class="the-financial-ascent" src="images/thumbnails/new-brighter-logo.png">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- External JavaScript files -->
+    <script src="JS Code/hamburger-menu.js"></script>
+    <script src="JS Code/drop-down-menu.js"></script>
+  </body>
+</html>
