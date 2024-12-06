@@ -301,11 +301,6 @@ section {
   padding: 5px;
 }
 
-.calculator-title {
-  font-size: 18px;
-  font-weight: 700;
-}
-
 footer {
   position: fixed;
   bottom: 0;

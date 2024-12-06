@@ -32,7 +32,7 @@ function results(variableName) {
 
   forHistory += `${variableName}: <span id=copy-content>${refinedRatio}</span>` + '<br>';
   // And this is where we update the div too so upon each compute event the history will automatically 
-  historyDiv.innerHTML = forHistory;
+  historyDiv.innerHTML = '<p style="font-weight: bold;">Calculator History<p>' + forHistory;
 
   return result;
 }
