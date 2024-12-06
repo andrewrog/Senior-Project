@@ -59,7 +59,7 @@
 
       <form>
         <label for="equations-selection" class="label">Select a ratio from the dropdown:</label>
-        <select id="equations" name="cars" class="financial-drop-down">
+        <select id="equations" class="financial-drop-down">
           <option value="" disabled selected>
             Ratios
           </option>
@@ -108,14 +108,6 @@
             Profit Margin
           </option>
 
-          <option value="profit-margin">
-            Quick
-          </option>
-
-          <option value="assets-return">
-            Return on Assets
-          </option>
-
           <option value="equity-return">
             Return on Equity
           </option>
@@ -123,11 +115,14 @@
         </select>
 
         <input type="button" onclick="ratioFunc()" value="Choose" class="ratio-choice" />
+
+       <input type="button" value="Show History" id="show-history" class="calc-history" />
       </form>
 
       <!-- this is the div that will hold the JS activated code -->
       <div id="description-div" class="calc-section"></div>
       <div class="results" id="results-div"></div>
+      <div class="history" id="history-div" style="display: none;"><p class="calculator-title">Calculator History</p></div>
     </section>
 
     <footer>
